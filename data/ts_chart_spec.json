@@ -1,0 +1,65 @@
+{
+	"parent_div": "us-chart",
+	"time_field": "hmvi_time.ts",
+	"time_fmt_field": "hmvi_time.fmt",
+	"charts": [
+		{
+			"chart_title": "Monthly level",
+			"chart_div": "hmvi-chart",
+			"value_field": "hmvi_us.ts",
+			"color_spec": {
+				"color": "#7cc576",
+				"zones": [
+					{ "value": 0, "color": "#f26c4f" },
+					{ "value": 1000, "color": "#7cc576" }
+				]
+			}
+		},
+		
+		{
+			"chart_title": "12-month change",
+			"chart_div": "hmvi-change",
+			"value_field": "hmvi_us_chg.12.ts",
+			"color_spec": {
+				"color": "#7cc576",
+				"zones": [
+					{ "value": 0, "color": "#f26c4f" },
+					{ "value": 1000, "color": "#7cc576" }
+				]
+			}
+		},
+		{
+			"chart_title": "States Trending Up",
+			"chart_div": "states-up",
+			"value_field": "hmvi_us_num_states_trend_up.ts",
+			"color_spec": {
+				"color": "#6dcff6"
+			}
+		},
+		{
+			"chart_title": "States Outperforming",
+			"chart_div": "states-outperforming",
+			"value_field": "hmvi_us_num_states_outperforming.ts",
+			"color_spec": {
+				"color": "#6dcff6"
+			}
+		},
+		{
+			"chart_title": "Metros Trending Up (%)",
+			"chart_div": "metros-up",
+			"value_field": "hmvi_us_pct_metro_trend_up.ts",
+			"color_spec": {
+				"color": "#6dcff6"
+			}
+		},
+		{
+			"chart_title": "Metros Outperforming (%)",
+			"chart_div": "metros-outperforming",
+			"value_field": "hmvi_us_pct_metro_outperforming.ts",
+			"color_spec": {
+				"color": "#6dcff6"
+			}
+		}
+]
+}
+

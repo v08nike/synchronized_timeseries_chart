@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  </head>
+  <body>
+    <div id="us-chart">
+      <div id="hmvi-chart"></div>
+      <div id="hmvi-change"></div>
+      <div id="states-up"></div>
+      <div id="states-outperforming"></div>
+      <div id="metros-up"></div>
+      <div id="metros-outperforming"></div>
+    </div>
+    <div sytle="height: 300px;">
+
+    </div>
+  </body>
+  <script src="/src/synchronized_timeseries_chart.js"></script>
+  <script>
+    let data_file='./data/monthly_report_data.json';
+		let ts_chart_spec_file = "./data/ts_chart_spec.json";
+    createSynchronizedTimeSeriesChart(ts_chart_spec_file, data_file);
+  </script>
+</html>
